@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+}
+.header p{
+    font-size: 30px;
+}
+.header img{
+    width: 75px;
+    height: 75px;
+}
+.introduce{
+    font-size: 23px;
+}

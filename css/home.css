@@ -176,6 +176,7 @@ body{
     font-size: 17px;
     padding: 8px;
     border-radius: 100%;
+    color: blueviolet
 }
 .chat-top i:hover{
     background-color: rgb(245, 243, 242);
@@ -217,12 +218,12 @@ body{
 }
 .chat-bottom i{
     font-size: 17px;
-    margin: 0 3px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 7px;
+    padding: 5px 10px;
     border-radius: 100%;
+    color: rgb(83, 81, 215);
 }
 .chat-bottom input{
     outline: none;
@@ -256,7 +257,65 @@ body{
     width: 75px;
     border-radius: 100%;
 }
-.setting{
+.setting-infor{
+    border-radius: 15px;
+}
+.setting-top{
     display: flex;
     flex-direction: row;
+    margin-left: 55px;
+}
+.setting-top-item i{
+    background-color: rgb(238, 238, 239);
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 20px;
+}
+.setting-top-item i:hover{
+    background-color: rgb(223, 221, 224);
+}
+.setting-top-item{
+    width: 100px;
+}
+.setting-infor{
+    height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+.setting-bottom{
+    margin: 0 15px;
+}
+.setting-bottom-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    justify-content: space-between;
+}
+.setting-bottom-change{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+.setting-bottom-change i{
+    padding: 10px;
+    background-color: rgb(245, 243, 242);
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.setting-bottom-title:hover{
+    background-color: rgb(236, 235, 236);
+}
+.setting-bottom-change:hover{
+    background-color: rgb(236, 235, 236);
+}
+.icon{
+    padding: 10px;
+    background-color: rgb(245, 243, 242);
+    border-radius: 100%;
+    margin-right: 10px;
 }
