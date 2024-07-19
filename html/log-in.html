@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>ĐĂng nhập Messenger</title>
 </head>
 <body>
     <div class="header">
@@ -31,14 +31,21 @@
         <div class="form-left">
             <p class="description">Tụ họp mọi lúc, mọi nơi</p>
             <p class="introduce">Với Messenger, việc kết nối với những người thân yêu thật đơn giản và thú vị.</p>
-            <input type="text" placeholder="Email hoặc số điện thoại">
-            <input type="password" placeholder="Mật khẩu">
+            <div class="form-input">
+                <input class="email" type="text" placeholder="Email">
+                <p class="error">error</p>
+            </div>
+            <div class="form-input">
+                <input class="password"  type="password" placeholder="Mật khẩu">
+                <p class="error">error</p>
+            </div>
+            <p class="log-in-status">Đăng nhập thành công</p>
             <div class="sign-up">
                 <p>Bạn mới tới Messenger?</p>
                 <a href="./sign-up.html">Đăng ký</a>
             </div>
             <div class="log-in">
-                <button class="confirm">Đăng nhập</button>
+                <button class="log-in-button">Đăng nhập</button>
                 <p>Bạn quên mật khẩu?</p>
             </div>
             <div class="keep-log-in">
@@ -67,5 +74,10 @@
             <img src="../img/meta-logo.png" alt="">
         </div>
     </div>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script defer src="../js/config.js"></script>
+    <script type="module" src="../js/log-in.js"></script>
 </body>
 </html>

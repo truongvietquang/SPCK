@@ -1,10 +1,11 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyBTdzc-2cYuFwpEqsdwIY0VTPU6AaagFbY",
-    authDomain: "quang-87181.firebaseapp.com",
-    projectId: "quang-87181",
-    storageBucket: "quang-87181.appspot.com",
-    messagingSenderId: "923916446646",
-    appId: "1:923916446646:web:c7abd044c854810a45af17"
+    apiKey: "AIzaSyAnVlFLVfXKMZh2HKiuT0x35Fn-4K0XXAQ",
+    authDomain: "quang-eeb7b.firebaseapp.com",
+    projectId: "quang-eeb7b",
+    storageBucket: "quang-eeb7b.appspot.com",
+    messagingSenderId: "967082087508",
+    appId: "1:967082087508:web:c71b5b4a7d0e0612dcc9c1",
+
 };
   
 firebase.initializeApp(firebaseConfig);
