@@ -34,6 +34,24 @@ body{
 .menu-top i:hover{
     background-color: rgb(223, 221, 224);
 }
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.menu-des{
+    position: absolute;
+    visibility: hidden;
+    left: 60px;
+    width: 200px;
+    top: 8px;
+    z-index: 999;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
 .menu-bottom{
     display: flex;
     flex-direction: column;
@@ -55,7 +73,7 @@ body{
     height: 40px;
     border-radius: 30px;
     padding: 2px;
-    margin: 0 10px;
+    margin: 7px 10px;
 }
 .menu-bottom i:hover{
     background-color: rgb(223, 221, 224);
@@ -132,6 +150,11 @@ body{
 .message{
     font-size: 13px;
     opacity: 0.5;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    width: 180px; 
+    height: 1.2em; 
+    white-space: nowrap;
 }
 .people-item:hover{
     background-color: rgb(245, 243, 242);
@@ -240,7 +263,7 @@ body{
     border-radius: 100%;
     color: rgb(104, 122, 211);
 }
-.chat-bottom input{
+.message-input{
     outline: none;
     border: none;
     margin: 0 10px;

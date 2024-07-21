@@ -17,15 +17,42 @@
 <body>
     <div class="menu">
         <div class="menu-top">
-            <i class="fa-solid fa-comment"></i>
-            <i class="fa-solid fa-user-group"></i>
-            <i class="fa-solid fa-shop"></i>
-            <i class="fa-solid fa-comment-dots"></i>
-            <i class="fa-solid fa-box-archive"></i>
+            <div class="menu-item">
+                <i class="fa-solid fa-comment"
+                style="background-color: rgb(223, 221, 224);"></i>
+                <p class="menu-des">Đoạn chat</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-user-group"></i>
+                <p class="menu-des">Mọi người</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-shop"></i>
+                <p class="menu-des">Marketplace</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-comment-dots"></i>
+                <p class="menu-des">Tin nhắn đang chờ</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-box-archive"></i>
+                <p class="menu-des">Kho lưu trữ</p>
+            </div>
+
         </div>
         <div class="menu-bottom">
-            <img src="../img/main-profile-picture.png" alt="">
-            <i class="fa-solid fa-list"></i>
+            <div class="menu-item">
+                <img src="../img/main-profile-picture.png" alt="">
+                <p class="menu-des">Bạn</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-arrow-right-from-bracket log-out"></i>
+                <p class="menu-des">Đăng xuất</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-list"></i>
+                <p class="menu-des">Mở rộng</p>
+            </div>
         </div>
     </div>
     <div class="people">
@@ -105,8 +132,8 @@
             <i class="fa-solid fa-angle-up"></i>
             <i class="fa-regular fa-image"></i>
             <i class="fa-solid fa-note-sticky"></i>
-            <input class="chat-bottom-send" type="text" placeholder="Aa">
-            <i class="fa-solid fa-face-smile send"></i>
+            <input class="message-input" type="text" placeholder="Aa">
+            <i class="fa-solid fa-face-smile"></i>
             <i class="fa-solid fa-thumbs-up"></i>
         </div>
     </div>
@@ -194,6 +221,11 @@
             </div>
         </div>
     </div>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script defer src="../js/config.js"></script>
     <script src="../js/smallFeature.js"></script>
+    <script src="../js/log-out.js"></script>
 </body>
 </html>
